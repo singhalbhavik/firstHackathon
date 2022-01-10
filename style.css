@@ -1,0 +1,207 @@
+body{
+  background-color: #33ccff;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  font-family: 'Rowdies', cursive;
+  font-size: 48px;
+  margin-bottom: 100px;
+  font-weight: normal;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Moon Dance', cursive;
+  color: black;
+}
+
+.topnav{
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: #ffffff;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 2;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.post {
+  width: 280px;
+  margin: 5px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 2px #333;
+  transition: 0.3s all ease;
+}
+
+.post:hover{
+  background-color:#dff9fb;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+  color: #c0392b;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#correct-answer{
+  color: green;
+}
+
+.red{
+  color:red;
+}
+.quizQ{
+  text-align: center;
+  font-family: "Trirong", serif;
+}
+
+label{
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+label input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+label .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.button{
+  background-color: rgb(76, 168, 175);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 8px 10px;
+  cursor: pointer;
+}
+
+#quizes{
+  text-align: center;
+}
